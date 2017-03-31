@@ -3,12 +3,9 @@
 <head>
 	<title>Repertoire</title>
 	<meta charset="utf-8"/>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-	<script src="node_modules/jquery/dist/jquery.min.js"></script>
-	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script src="app.js"></script>
-
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>	
+	<link rel="stylesheet" type="text/css" href="node_modules/tablesorter/dist/css/theme.bootstrap_3.min.css" />
+	<link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
 	<form>
@@ -29,19 +26,24 @@
 	  </div>
 	</form>
 
-	<table class="table">
+	<table class="table tablesorter table-striped thead-inverse" id="myTable">
 	  <thead>
 	    <tr>
-	    	<th>Number</th>
-	      	<th>Prenom</th>
-	      	<th>Nom</th>
-	      	<th>Age</th>
+	    	<th scope="col">Number</th>
+	      	<th scope="col">Prenom</th>
+	      	<th scope="col">Nom</th>
+	      	<th scope="col">Age</th>
 	    </tr>
 	  </thead>
-	  <tbody id="myTable">
+	  <tbody>
 	    
 	  </tbody>
 	</table>
+
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="node_modules/tablesorter/dist/js/jquery.tablesorter.min.js"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>	
+	<script src="app.js"></script>
 
 </body>
 </html>
