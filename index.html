@@ -14,23 +14,34 @@
 	<form>
 	  <div class="container">
 	  	<div class="form-group">
-	  	  <label for="Contact">Contact</label>
-	  	  <input type="text" class="form-control" id="idContact" placeholder="Entrer le contact" />
-	  	</div>
-	  	<div class="form-group">
 	  	  <label for="Prenom">Prenom</label>
-	  	  <input type="text" class="form-control" id="idPrenom" placeholder="Entrer le prenom" />
+	  	  <input type="text" class="form-control" id="idPrenom" />
 	  	</div>
 	  	<div class="form-group">
 	  	  <label for="Nom">Nom</label>
-	  	  <input type="type" class="form-control" id="idNom" placeholder="Entrer le nom" />
+	  	  <input type="type" class="form-control" id="idNom"/>
 	  	</div>
 	  	<div class="form-group">
 	  	  <label for="Age">Age</label>
-	  	  <input type="text" class="form-control" id="idAge" placeholder="Entrer l'âge" />
+	  	  <input type="text" class="form-control" id="idAge"/>
 	  	</div>
-	   	<button type="button" class="btn btn-default">Submit</button>
+	   	<button type="button" class="btn btn-default" id="buttonSubmit">Submit</button>
 	  </div>
 	</form>
+
+	<table class="table">
+	  <thead>
+	    <tr>
+	    	<th>Number</th>
+	      	<th>Prenom</th>
+	      	<th>Nom</th>
+	      	<th>Age</th>
+	    </tr>
+	  </thead>
+	  <tbody id="myTable">
+	    
+	  </tbody>
+	</table>
+
 </body>
 </html>
