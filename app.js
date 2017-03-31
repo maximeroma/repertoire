@@ -11,7 +11,8 @@ $(document).ready(function(){
 									.append("<td>" + annuary[i]["prenom"] + "</td>")
 									.append("<td>" + annuary[i]["nom"] + "</td>")
 									.append("<td>" + annuary[i]["age"] + "</td>")
-									.append("<button class='btn btn-secondary deleteButton'>X</button>");
+									.append("<button class='btn btn-danger deleteButton'>X</button>")
+									.append("<button class='btn btn-success succesButton'>M</button>");
 			jqObj.data('ID', i);
 			console.log(jqObj.data('ID', i));
 		};
@@ -35,6 +36,7 @@ $(document).ready(function(){
 
 			annuary.push(contact);
 			//console.log(annuary);
+
 			
 			contact = { "nom" : "",
 						"prenom" : "",
@@ -50,8 +52,10 @@ $(document).ready(function(){
 											.append("<td>" + annuary[i]["prenom"] + "</td>")
 											.append("<td>" + annuary[i]["nom"] + "</td>")
 											.append("<td>" + annuary[i]["age"] + "</td>")
-											.append("<button class='btn btn-secondary deleteButton'>X</button>");
+											.append("<button class='btn btn-danger deleteButton'>X</button>")
+											.append("<button class='btn btn-success succesButton'>M</button>");
 				jqObj.data('ID', i);
+				var a = sessionStorage.setItem('annuary', JSON.stringify(annuary));
 				//console.log(jqObj.data())
 			};
 		});
@@ -72,7 +76,8 @@ $(document).ready(function(){
 											.append("<td>" + annuary[i]["prenom"] + "</td>")
 											.append("<td>" + annuary[i]["nom"] + "</td>")
 											.append("<td>" + annuary[i]["age"] + "</td>")
-											.append("<button class='btn btn-secondary deleteButton'>X</button>");
+											.append("<button class='btn btn-danger deleteButton'>X</button>")
+											.append("<button class='btn btn-success succesButton'>M</button>");
 				jqObj.data('ID', i);
 				//console.log(jqObj.data())
 			};
